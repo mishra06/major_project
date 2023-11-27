@@ -15,6 +15,14 @@ html {
 body{
    background-color: #fbfbfb;
 }
+
+h6, h1, h2, h3, h4, h5, p, a, span, button, li, input, textarea, label, select, option {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* navbar */
 nav{
     display: flex;
     flex-direction: row;
@@ -80,7 +88,7 @@ nav a:visited {
   nav ul .icon:hover a {
     color: #14BF98;
   }
-
+  /* homepage */
 .Home{
     background-image: url(./assest/header-background.jpg);
     background-size: cover;
@@ -213,4 +221,237 @@ button:hover {
   .Intro .skills-list-container .skill-item p {
     color: #787976;
     font-family: "Open Sans", sans-serif;
+  }
+
+  /* service  css */
+
+  .services {
+    padding: 5rem 0;
+  }
+  .services > span {
+    display: block;
+    text-align: center;
+  }
+  .services > h3 {
+    text-align: center;
+    font-size: 1.75rem;
+    color: #484a46;
+  }
+  .services .service-list-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 3rem 14vw;
+    align-items: start;
+  }
+  .services .service-list-container .service-item {
+    width: 30%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #ebe8e8;
+    border-radius: 5px;
+    background-color: #fbfbfb
+  }
+  .services .service-item img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(2%) contrast(90%);
+    border-radius: 5px 5px 0 0;
+  }
+  .services .service-item h4 {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #484a46;
+    padding: 0.5rem 1rem;
+  }
+  .services .service-item p {
+    line-height: 1.5rem;
+    color: #787976;
+    padding: 0.5rem 1rem;
+  }
+  .services .service-item ul {
+    line-height: 1rem;
+    color: #787976;
+    padding: 0.5rem 1rem;
+    list-style-type: none;
+  }
+  .services .service-item ul li::before {
+    content: "\25a0";
+    color: #14bf98;
+    margin-right: 5px;
+    font-size: 1.25rem;
+  }
+  .services .service-item h6 {
+    font-size: 1.1rem;
+    color: #484a46;
+    text-align: center;
+    padding: 0.5rem 2rem;
+  }
+  .services .service-item h6 .price {
+    color: #14bf98;
+  }
+  .services .service-item button {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  .services .service-item button:hover {
+    background-color: #ffffff;
+  }
+  .services .proposition {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: #ffffff;
+  }
+  .services .proposition img {
+    width: 50%;
+    filter: grayscale(2%) contrast(90%);
+    min-height: 35rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  .services .proposition .content {
+    width: 50%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+  }
+  .services .proposition-1 .content {
+    padding: 5rem 14vw 5rem 5rem;
+  }
+  .services .proposition-1 h3 {
+    font-size: 1.75rem;
+  }
+  .services .proposition-1 h4 {
+    color: #484a46;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  .services .proposition-1 p {
+    padding-left: 3rem;
+  }
+  .services .proposition-1 h4.active, .services .proposition-1 h4:hover {
+    color: #14bf98;
+  }
+  .services .proposition-1 h4 span {
+    border-radius: 50%;
+    border: 2px solid #484a46;
+    padding: 0 0.62rem;
+    color: #484a46;
+    margin-right: 0.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .services .proposition-1 h4:not(.active):hover span {
+    border-color: #14bf98;
+    color: #14bf98;
+  }
+  .services .proposition-1 h4:hover span {
+    color: #14bf98;
+    border-color: #14bf98;
+  }
+  .services .proposition-1 h4.active span {
+    border: 2px solid #14bf98;
+    background-color: #14bf98;
+    color: #ffffff;
+  }
+  .services .proposition-2 .content {
+    padding: 5rem 5rem 5rem 14vw;
+  }
+  .services .proposition-2 .category-list-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .services .proposition-2 .category-item h3 i {
+    font-size: 14px;
+  }
+  .services .proposition-2 .content h3 {
+    font-size: 1.25rem;
+  }
+  .services .proposition-2 .content p {
+    font-family: "Open Sans", sans-serif;
+    color: #787976;
+  }
+  .services .proposition-2 .category-item h3 {
+    color: #787976;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    font-size: 1.375rem;
+  }
+  .services .proposition-2 .category-item.active h3, .services .proposition-2 .category-item h3:hover {
+    color: #14bf98;
+  }
+  .services .proposition-2 .skill-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 2rem;
+  }
+  .services .proposition-2 .skill-item h6 {
+    color: #484a46;
+    font-size: 0.75rem;
+  }
+  .services .proposition-2 .skill-item .progress-bar {
+    height: 1.5rem;
+    margin-top: 0.5rem;
+    background-color: #14bf98;
+    border-radius: 5px;
+    width: 0;
+  }
+  .services .proposition-2 .skill-item .progress-bar.p-100 {
+    width: 100%;
+  }
+  .services .proposition-2 .skill-item .progress-bar.p-76 {
+    width: 76%;
+  }
+  .services .proposition-2 .skill-item .progress-bar.p-90 {
+    width: 90%;
+  }
+  .services .proposition h3 {
+    font-size: 1.5rem;
+    color: #484a46;
+  }
+  .services .testimonials {
+    padding: 5rem 14vw;
+  }
+  .services .testimonials h3 {
+    color: #484a46;
+    text-align: center;
+    font-size: 1.75rem;
+  }
+  .services .testimonials p {
+    color: #787976;
+    text-align: center;
+  }
+  .services .testimonial-list-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    overflow-x: scroll;
+    padding: 3rem 0;
+  }
+  .services .testimonial-item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+  .services .testimonial-item img {
+    width: 6rem;
+    border-radius: 50%;
+    padding-bottom: 1rem;
+  }
+  .services .testimonial-item p {
+    line-height: 1.5rem;
+    color: #787976;
+    padding-bottom: 1rem;
+  }
+  .services .testimonial-item h4 {
+    color: #484a46;
   }
