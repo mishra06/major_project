@@ -455,3 +455,58 @@ button:hover {
   .services .testimonial-item h4 {
     color: #484a46;
   }
+
+  /* calme.... */
+
+  .call-me {
+    padding: 5rem 14vw;
+    background-color: #153e52;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .call-me .content, .call-me .form {
+    width: 45%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: #ffffff
+  }
+  .call-me .content h3 {
+    font-size: 1.75rem;
+  }
+  .call-me .content p {
+    line-height: 1.5rem;
+    color: #ebe8e8;
+  }
+  .call-me .content ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  .call-me .content ul li::before {
+    content: "\25a0";
+    color: #14bf98;
+    margin-right: 7px;
+    font-size: 1.25rem;
+  }
+  .call-me form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .call-me form .terms-container .form-lebal-terms {
+    color: #ebe8e8;
+    font-size: 0.875rem;
+    padding-left: 0.4rem;
+  }
+  .call-me form input, .call-me form select {
+    background-color: #2a5d77;
+    color: #fff;
+    border: 1px solid #39728f;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+  }
+
+  .underline {
+    text-decoration: underline;
+    cursor: pointer;
+  }
